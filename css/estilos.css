@@ -300,7 +300,9 @@ main {
 	}
 }
 /* ------------------SECCION DEL ABOUT----------------- */
-
+.about{
+	background: #FBF8F1;
+}
 section .about-contenedor{
 	padding: 50px 50px;
 	display:flex;
@@ -401,10 +403,10 @@ section .about-contenedor{
 		width: 50%;
 	}
 	.about-contenedor{
-		background-color: #ffffffb8;
+		background-color: rgba(255, 255, 255, 0.656);
 		width: 80%;
 		margin: 0 auto;
-		border-radius: 10px;
+		border-radius: 10px 10px 10px 90px;
 	}
 }
 
@@ -432,7 +434,7 @@ section .about-contenedor{
 /* -----------------SECCION DE SKILLS------------------ */
 
 #experience {
-	background-color:rgb(255, 254, 246);
+	background-color:#F7ECDE;
 }
 
 .works h3{
@@ -455,9 +457,10 @@ section .about-contenedor{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content:center;
+	align-content: center;
 }
 .skilitos {
-	margin-top: 50px;
+	margin-top: 60px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .skilitos ul{
@@ -465,83 +468,44 @@ section .about-contenedor{
 	text-align: center;
 }
 .skilitos li{
-	list-style:circle;
-	margin: 10px 0;
+	margin: 30px 0;
 	list-style: none;
 }
-.skilitos label{
-	color: #333;
-	font-size: 30px;
-	background: white;
-	border-radius: 50%;
-}
 
+#wp, #git{
+	width: 40px;
+	height: 40px;
+}
+.estudios {
+	width: 80%;
+	margin: 0 auto;
+}
 .estudios div{
-	border-radius: 50%;
+	border-radius: 5px 5px 5px 20px;
 	padding: 10px;
 	margin: 10px;
+	border: 1px solid rgba(0,0,0,0.2);
 	box-shadow: 5px 5px 5px #888;	
 	cursor: pointer;
-	animation: grow 3s ease-in-out infinite;
-}
-#html5{
-	background-color: rgb(216, 142, 142);
-	animation-delay: 0.5s;
+	position:relative;
+	background-color:#F7ECDE;
 }
 
-#css3{
-	background-color:rgb(163, 196, 230);
-	animation-delay: 1s;
-}
-
-#js {
-	background-color: rgb(230, 223, 183);
-	animation-delay: 1.5s;
-}
-
-#wordpress{
-	background-color: rgb(183, 225, 230);
-	animation-delay: 2s;
-}
-
-#react {
-	background-color: rgb(36, 42, 43);
-	animation-delay: 2.5s;
-}
-
-#node {
-	background-color: rgb(215, 225, 219);
-	animation-delay: 3s;
-}
-
-
-@keyframes grow {
-	0%, 40%, 100%{
-		transform: scale(0.8);
-	}
-	20%{
-		transform: scale(1.2);
-	}
-	
-}
-/*.estudios div:hover {
-	background-color:aliceblue;
-	transition: all 0.5s;
-	animation-name: vuelta;
-	animation-duration: 2s;
-}
-
-@keyframes vuelta {
-	0% {transform:rotateY(0deg)}
-	25% {transform:rotateY(90deg)}
-	50%{transform:rotateY(180deg)}
-	75%{transform:rotateY(270deg)}
-	100%{transform:rotateY(360deg)}
-}*/
 
 .works img {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
+}
+.estudios div:hover{
+	opacity: 0.8;
+}
+
+.estudios h4 {
+	text-align: center;
+}
+
+#logcss{
+	width: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -551,8 +515,8 @@ section .about-contenedor{
 		padding-bottom: 20px;
 	}
 	.works img{
-		width: 100px;
-		height: 100px;
+		width: 120px;
+		height: 120px;
 	}
 }
 
@@ -563,11 +527,15 @@ section .about-contenedor{
 	
 	.works .works-contenedor{
 		height: 90%;
+		width: 80%;
+		margin: 0 auto;
+		border-radius: 10px 10px 10px 60px;
 	}
 	.works-contenedor{
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
+		background-color:#ffffffb8 ;
 	}
 	.skilitos{
 		border-top: 1px solid rgba(0,0,0,0.1);
@@ -580,7 +548,7 @@ section .about-contenedor{
 		padding:30px;
 		flex-shrink: 2;
 		height: auto;
-		align-self: stretch;
+		align-self:center;
 	}
 
 	.tema p {
@@ -589,10 +557,10 @@ section .about-contenedor{
 		font-size: 17px;
 		padding-bottom:50px;
 	}
-
-	.works img{
-		width: 150px;
-		height: 150px;
+	
+	.estudios img{
+		width: 120px;
+		height:120px;
 	}
 }
 
@@ -609,10 +577,15 @@ section .about-contenedor{
 		flex-shrink: 1;
 	}
 }
+
+/*---------PORTFOLIO-----*/
+.portfolio{
+	background-color:#E9DAC1;
+}
 /*-------FOOTER----- */
 
 footer{
-	background: #cec49e;
+	background:	#54BAB9;
 	width: 100%;
 	height: auto;;
 	color: #333;
@@ -644,12 +617,12 @@ footer{
 	margin: 20px 100px;
 }
 
-footer .icon-facebook, footer .icon-instagram, footer .icon-linkedin {
+footer a{
 	font-size: 30px;
 	color:rgb(36, 42, 43);
 }
 
-footer .icon-facebook:hover, footer .icon-instagram:hover, footer .icon-linkedin:hover {
+footer a:hover{
 	color:gold;
 }
 
