@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
    font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -42,11 +46,11 @@ header ul.lista{
 	width: 45%;
 	height: auto;
 	transform: translateX(-1000px);
-	transition: ease-in-out 0.7s;
+	transition: ease-in-out 0.3s;
 }
 header ul.lista.show{
 	transform: none;
-	transition: ease-in-out 0.7s;
+	transition: ease-in-out 0.3s;
 	z-index: 20;
 }
 
@@ -604,7 +608,7 @@ section .about-contenedor{
 
 .galery img {
 	width: 100%;
-	height: 300px;
+	height:100px;
 }
 
 .galery img:hover {
@@ -616,6 +620,12 @@ section .about-contenedor{
 	font-size: 20px;
 	padding-top: 10px;
 	font-weight: 400;
+}
+
+@media only screen and (min-width: 992px) {
+	.portafolio{
+		height: 100vh;
+	}
 }
 /*-------FOOTER----- */
 
@@ -649,11 +659,13 @@ footer{
 }
 
 .sociales {
-	margin: 20px 100px;
+	width: 100%;
+	text-align: center;
+	margin: 20px auto;
 }
 
 footer a{
-	font-size: 30px;
+	font-size: 20px;
 	color:rgb(36, 42, 43);
 }
 
@@ -663,5 +675,5 @@ footer a:hover{
 
 
 .copyright{
-	font-size: 12px
+	font-size: 14px
 }
