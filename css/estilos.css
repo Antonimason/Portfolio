@@ -166,7 +166,7 @@ main {
 }
 
 .titulo-banner{
-   	margin-top: 10px;
+   	padding-top: 10px;
 	font-size: 17px;
 	
 }
@@ -439,9 +439,9 @@ section .about-contenedor{
 
 .works h3{
 	padding-top: 60px;
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
-	font-weight: bold;
+	font-weight: normal;
 }
 .tema{
 	margin: 0 auto;
@@ -453,7 +453,7 @@ section .about-contenedor{
 	text-align: center;
 }
 .works .estudios{
-	margin-top: 60px;
+	padding: 60px 0;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content:center;
@@ -579,8 +579,43 @@ section .about-contenedor{
 }
 
 /*---------PORTFOLIO-----*/
-.portfolio{
+.portafolio{
 	background-color:#E9DAC1;
+}
+.porta-contenedor{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.explain h3 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;
+	padding-top: 50px;
+}
+.galery{
+	padding: 50px 0;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.galery img {
+	width: 100%;
+	height: 300px;
+}
+
+.galery img:hover {
+	opacity: 0.5;
+}
+
+.galery h4 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 10px;
+	font-weight: 400;
 }
 /*-------FOOTER----- */
 
