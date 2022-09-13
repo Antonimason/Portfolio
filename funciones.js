@@ -33,9 +33,7 @@ ScrollReveal().reveal(".estudios", { delay: 1500 });
     let value;
 
     setInterval(()=>{
-        for(let i = 0; i<=2; i++){
-            changePosition(1);
-        }
+        changePosition(1);
     },5000);
 
     arrownext.addEventListener('click', ()=> changePosition(1));
