@@ -588,7 +588,7 @@ section .about-contenedor{
 .porta-contenedor{
 	margin: 0 auto;
 	min-height: 100vh;
-	max-width: 400px;
+	width: 95%;
 	overflow: hidden;
 }
 
@@ -619,7 +619,7 @@ section .about-contenedor{
 	cursor: pointer;
 	width: 30px;
 	height: 40px;
-	margin: 10px;
+	margin: 0 5px;
 }
 
 .slider_arrow:nth-of-type(2) {
