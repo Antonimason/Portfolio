@@ -304,7 +304,7 @@ main {
 }
 /* ------------------SECCION DEL ABOUT----------------- */
 .about{
-	background: #FBF8F1;
+	background-color:rgb(222, 205, 187);
 }
 section .about-contenedor{
 	padding: 50px 50px;
@@ -405,31 +405,42 @@ section .about-contenedor{
 		padding: 40px;
 		width: 50%;
 	}
-	.about-contenedor{
-		background-color: rgba(255, 255, 255, 0.656);
-		width: 80%;
-		margin: 0 auto;
-		border-radius: 10px 10px 10px 90px;
-	}
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1400px){
 	.about{
 		height: 100vh;
 	}
+	section .about-contenedor{
+		width: 100%;
+		height: 100vh;
+		display:flex;
+		justify-content: space-evenly;
+	}
 	.imagenyo img {
-		width: 400px;
-		height: 400px;
+		width: 35em;
+		height: 80vh;
+		border-radius: 0;
+		padding: 0 100px 0 0;
+		margin: 0;
+		align-self: stretch;
 	}
 	
 	.yo {
-		font-size: 18px;
-		line-height: 30px;
+		width: 700px;
+		margin-top: 40px;
+		line-height: 35px;
+		font-size: 25px;
 	}
 	
-	.yo h3 {
-		font-size: 40px;
-		padding: 30px 0;
+	.yo h3{
+		font-size: 55px;
+		margin-bottom: 35px;
+		font-weight: bold;
+	}
+	
+	.links{
+		margin-top: 100px;
 	}
 }
 
@@ -437,7 +448,7 @@ section .about-contenedor{
 /* -----------------SECCION DE SKILLS------------------ */
 
 #experience {
-	background-color:#F7ECDE;
+	background:rgb(244, 238, 232)
 }
 
 .works h3{
@@ -583,7 +594,7 @@ section .about-contenedor{
 
 /*---------PORTFOLIO-----*/
 .portafolio{
-	background-color:#E9DAC1;
+	background-color:rgb(222, 205, 187);
 }
 .porta-contenedor{
 	margin: 0 auto;
@@ -639,6 +650,14 @@ section .about-contenedor{
 	object-fit: cover;
 	display: block;
 	margin: 0 auto;
+}
+
+.slider_img:hover {
+	filter: brightness(0.8);
+}
+
+#picture-blog {
+	object-position: 100% 100%;
 }
 .explain h3 {
 	text-align: center;
@@ -713,6 +732,9 @@ section .about-contenedor{
 		width: 100%;
 		object-fit: contain;
 	}
+	#picture-blog {
+		object-position: 50% 50%;
+	}
 	.subtitle{
 		font-size: 1.5rem;
 	}
@@ -720,7 +742,7 @@ section .about-contenedor{
 /*-------FOOTER----- */
 
 footer{
-	background:	#54BAB9;
+	background:	rgb(244, 238, 232);
 	width: 100%;
 	height: auto;;
 	color: #333;
@@ -734,11 +756,12 @@ footer{
 	padding: 30px;
 }
 
-.contacto p {
+.contacto p, #mail{
 	font-size: 12px;
 	padding: 5px;
 	text-align: center;
 }
+
 
 .footer-contenedor h3{
 	font-size: 18px;
@@ -788,4 +811,11 @@ footer a:hover{
 	.contacto p, .copyright {
 		font-size: 15px;
 	}
+	#mail {
+		display: block;
+		font-size: 15px;
+		width: 40px;
+		margin: 0 auto;
+	}
+
 }
