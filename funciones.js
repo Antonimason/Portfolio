@@ -19,10 +19,10 @@ secciones.forEach(seccion => seccion.addEventListener("click", ()=>{ document.qu
 /*--------------SCROLL REVEAL------------------- */
 ScrollReveal().reveal(".banner", { delay: 500 });
 ScrollReveal().reveal(".imagenyo", { delay: 500 });
-ScrollReveal().reveal(".yo", { delay: 1000 });
+ScrollReveal().reveal(".yo", { delay: 500 });
 ScrollReveal().reveal(".about-contenedor", { delay: 500 });
 ScrollReveal().reveal(".tema", { delay: 500 });
-ScrollReveal().reveal(".estudios", { delay: 1500 });
+ScrollReveal().reveal(".estudios", { delay: 500 });
 
 
 /*------------SLIDER------------ */
