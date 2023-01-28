@@ -39,22 +39,16 @@ const verifyVisibility = (entries) => {
     if (entry.isIntersecting) {
 
     let htmlLoad = document.querySelector('.html-load')
-    htmlLoad.style.animationName = "going100";
 
     let cssLoad = document.querySelector('.css-load')
-    cssLoad.style.animationName = "going100";
 
     let jsLoad = document.querySelector('.js-load')
-    jsLoad.style.animationName = "going80";
 
     let bootsLoad = document.querySelector('.bootstrap-load')
-    bootsLoad.style.animationName = "going50";
 
     let jqueryLoad = document.querySelector('.jquery-load')
-    jqueryLoad.style.animationName = "going70";
 
     let reactLoad = document.querySelector('.react-load')
-    reactLoad.style.animationName = "going70";
 
 
     
