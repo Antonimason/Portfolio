@@ -11,7 +11,16 @@ html {
 body {
    font-family: 'Inter', sans-serif;
    font-size: 16px;
-   background-color: #ece2c6;
+   background-color: #e4e4e436;
+   letter-spacing: 1px;
+}
+
+.about, .works {
+	border-bottom: 1px solid rgb(223, 227, 231)
+}
+
+h1, h2, h3, h4 {
+	letter-spacing: 2px;
 }
 
 /* BARRA DEL MENU*/
@@ -20,7 +29,8 @@ header{
 }
 
 header .contenedor{
-    background-color:#ece2c6;
+    background-color:rgb(241, 242, 244);
+	border-bottom: 1px solid rgb(223, 227, 231);
     color: #fff;
     width: 100%;
 	position: fixed;
@@ -41,7 +51,7 @@ header ul.lista{
 	list-style-type: none;
 	z-index: 10;
 	position: absolute;
-	background-color:rgba(236, 226, 198);
+	background-color:rgb(241, 242, 244);
 	width: 45%;
 	height: auto;
 	transform: translateX(-1000px);
@@ -60,7 +70,7 @@ header a{
 	font-size: 20px;
 	text-align: center;
 	padding: 20px;
-	border-top: 0.3px solid rgb(128, 128, 128,0.3);
+	border-top: 1px solid rgb(223, 227, 231);
 }
 
 header a:hover{
@@ -178,7 +188,7 @@ main {
 	transform: translateY(50px);
 	border: 1px solid rgba(255, 255, 255,0.5);
 	margin: 0 auto;
-	padding: 10px 8px;
+	padding: 15px 10px;
 	width: 130px;
 	cursor: pointer;
 	text-decoration: none;
@@ -216,7 +226,7 @@ main {
 	}
 }
 
-@media only screen and (min-width:992px){
+@media only screen and (min-width:1024px){
 	.boton-abajo-main{
 		display:block;
 		position: absolute;
@@ -256,14 +266,6 @@ main {
 	
 	
 }
-@media only screen and (min-width:1024px){
-	.banner {
-		transform: translateY(250px);
-	}
-	.img-main {
-		height: 100vh;
-	}
-}
 
 @media only screen and (min-width:1440px){
 	.banner {
@@ -302,9 +304,6 @@ main {
 	}
 }
 /* ------------------SECCION DEL ABOUT----------------- */
-.about{
-	background-color:rgb(222, 205, 187);
-}
 section .about-contenedor{
 	padding: 50px 50px;
 	display:flex;
@@ -346,12 +345,7 @@ section .about-contenedor{
 .boton-arriba, .boton-abajo{
 	display:none;
 }
-
-@media only screen and (min-width:992px){
-	.about {
-		height:100vh;
-	}
-	
+@media only screen and (min-width:1024px){
 	.about .about-contenedor{
 		height: 90%;
 	}
@@ -399,6 +393,7 @@ section .about-contenedor{
 	.imagenyo img {
 		width: 300px;
 		height: 300px;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	}
 	.yo{
 		padding: 40px;
@@ -417,10 +412,11 @@ section .about-contenedor{
 		justify-content: space-evenly;
 	}
 	.imagenyo img {
-		width: 35em;
+		width: 27em;
+		box-shadow: -20px -20px 0px 1px #000000;
 		height: 80vh;
 		border-radius: 0;
-		padding: 0 100px 0 0;
+		padding: 0 0 0 0;
 		margin: 0;
 		align-self: stretch;
 	}
@@ -446,13 +442,11 @@ section .about-contenedor{
 
 /* -----------------SECCION DE SKILLS------------------ */
 
-#experience {
-	background:rgb(244, 238, 232);
-}
 .skills {
+	width: 70%;
 	margin: 0 auto;
-	text-align: center;
-	padding-top: 50px;
+	text-align: left;
+	padding: 50px 0 30px 0;
 	font-size: 40px;
 	font-weight: normal;
 }
@@ -483,8 +477,9 @@ section .about-contenedor{
 }
 .bar {
 	width: 60%;
-	background-color: rgba(37, 37, 37,0.7);
-	padding: 3px;
+	background-color: #000000;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	padding: 2px;
 	border-radius: 20px;
 	display: flex;
 }
@@ -493,7 +488,7 @@ section .about-contenedor{
 	width: 10%;
 }
 .bar > div{
-	background-color: #e7d6c5;
+	background-color: #f0ededf6;
 	border-radius: 20px;
 }
 
@@ -504,12 +499,12 @@ section .about-contenedor{
 	.box .name {
 		width: 10%;
 	}
-}
-@media only screen and (min-width:992px){
-	.works{
-		height: 100vh;
+
+	.skills {
+		width: 75%;
 	}
-	
+}
+@media only screen and (min-width:992px){	
 	.works-contenedor{
 		width: 100%;
 		height: 90vh;
@@ -520,31 +515,34 @@ section .about-contenedor{
 	}
 
 	.box .name {
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 }
 
 /*---------PORTFOLIO-----*/
-.portafolio{
-	background-color:rgb(222, 205, 187);
-}
 .porta-contenedor{
 	margin: 0 auto;
 	min-height: 100vh;
-	width: 95%;
-	overflow: hidden;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
 	flex-direction: column;
 }
+.slider {
+	width: 100%;
+}
 .slider_container{
+	width: 70%;
+	margin: 0 auto;
 	padding: 30px 0;
 	display: grid;
 	grid-template-columns: 20px 1fr 20px;
 	align-items: center;
 	gap: 1em;
-	background: #FBF8F1;
+	background: #ffffff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	border-radius: 30px;
 }
 .slider_body {
@@ -602,7 +600,7 @@ section .about-contenedor{
 	text-align: center;
 	font-size: 40px;
 	font-weight: normal;
-	padding: 60px 0;
+	padding-top: 20px;
 }
 
 .enunciado h2{
@@ -642,20 +640,58 @@ section .about-contenedor{
 	border-radius: 10px;
 	text-align: center;
 }
+#container-work {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+	/*
+    background: #ffffff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	*/
+	border-radius: 10px;
+}
 
+.project-container {
+    position: relative;
+}
+
+
+.project {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+
+}
+
+#container-work p {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    color:  white;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+	font-size: 13px;
+}
+
+@media only screen and (min-width: 512px) {
+    .project {
+        width: 250px;
+        height: 250px;
+    }
+}
 @media only screen and (min-width: 740px) {
-	.porta-contenedor {
-		max-width: 600px;
+	.slider_container {
+		width: 90%;
 	}
 }
-@media only screen and (min-width: 992px) {
-	.explain h3 {
-		padding: 20px 0;
-	}
-	.portafolio{
-		height: 100vh;
-	}
 
+/*
+@media only screen and (min-width: 992px) {
 	.porta-contenedor {
 		max-width: 2500px;
 	}
@@ -679,28 +715,64 @@ section .about-contenedor{
 	.upside {
 		padding-top: 30px;
 	}
+	.project {
+		width: 200px;
+		height: 210px;
+	}
+    #container-work {
+        flex-direction: row;
+        justify-content:flex-start;
+        overflow-x: auto;
+		flex-wrap: nowrap;
+        width: 95%;
+        height: 40vh;
+		padding: 0 10px;
+
+    }
+
+	#container-work p {
+		opacity: 0;
+	}
+	#container-work p:hover{
+		opacity: 1;
+	}
+
+    #container-work::-webkit-scrollbar{
+        display:block;
+        height: 10px;
+    }
+    #container-work::-webkit-scrollbar-thumb{
+        background: rgb(107, 105, 105);
+        
+    }
 }
+
+*/
 @media only screen and (min-width: 1024px) {
+	.explain h3 {
+		padding-top: 20px;
+	}
 	.slider {
 		position: relative;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
+		width: 95%;
 	}
 	.flex-body{
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
-		justify-content:space-around;
-		height: 60vh;
+		justify-content:space-evenly;
+		height: 30vh;
 	}
 	.flex-body p{
 		display: block;
 	}
 	.slider_img {
 		width: 380px;
-		height: 300px;
+		height: 100%;
 		border-radius: 20px;
 	}
 	.enunciado {
@@ -720,6 +792,12 @@ section .about-contenedor{
 	.enunciado span:hover {
 		background-color: #ffd399;
 	}
+
+	.project {
+        width: 350px;
+        height: 350px;
+    }
+
 }
 @media only screen and (min-width: 1440px) {
 	.slider_container{
@@ -729,7 +807,7 @@ section .about-contenedor{
 	.slider_img {
 		width: 700px;
 		object-fit: contain;
-		height: 50vh;
+		height: 30vh;
 	}
 	#picture-blog {
 		object-position: 50% 50%;
@@ -737,14 +815,18 @@ section .about-contenedor{
 	.subtitle{
 		font-size: 1.5rem;
 	}
+	.project {
+        width: 450px;
+        height: 450px;
+    }
 }
 /*-------FOOTER----- */
 
 footer{
 	max-width: 2500px;
 	color: #333;
-	background-color:rgb(222, 205, 187);
 	padding-top: 100px;
+	padding-bottom: 20px;
 }
 .sociales{
 	width: 100%;
@@ -773,5 +855,14 @@ footer{
 
 	.sociales a:hover {
 		color: gold;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.banner {
+		transform: translateY(250px);
+	}
+	.img-main, .about, .works {
+		height: 100vh;
 	}
 }
