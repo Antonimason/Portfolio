@@ -478,7 +478,7 @@ section .about-contenedor{
 }
 .bar {
 	width: 60%;
-	height: auto;
+	height: 1em;
 	background-color: #000000;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	padding: 2px;
@@ -490,7 +490,7 @@ section .about-contenedor{
 	width: 10%;
 }
 .bar > div{
-	background-color: #f0ededf6;
+	background-color: #e96161;
 	border-radius: 20px;
 }
 
