@@ -863,7 +863,7 @@ footer{
 	.banner {
 		transform: translateY(250px);
 	}
-	.img-main, .about, .works {
+	.img-main, .about{
 		height: 100vh;
 	}
 }
