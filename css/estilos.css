@@ -164,7 +164,7 @@ main {
 	transform: translateY(200px);
 	width: 100%;	
 }
-.nombre-banner #saludo{
+#saludo{
 	font-size: 33px;
 	font-weight: bold;
 }
@@ -272,9 +272,9 @@ main {
 		transform: translateY(300px);
 	}
 	#saludo {
-		font-size: 72px;
+		font-size: 38px;
 	}
-	.nombre-banner {
+	#nombre {
 		font-size: 40px;
 	}
 	
@@ -288,19 +288,42 @@ main {
 		width: 150px;
 	}
 }
-@media only screen and (min-width:1700px){
+@media only screen and (min-height: 950px) {
 	.banner {
-		transform: translateY(600px);
+		transform: translateY(420px);
 	}
 	#saludo {
-		font-size: 120px;
+		font-size: 38px;
 	}
-	.nombre-banner {
-		font-size: 80px;
+	#nombre {
+		font-size: 40px;
 	}
 	
 	.titulo-banner{
-		font-size: 60px
+		font-size: 30px
+	}
+}
+@media only screen and (min-width:1700px) {
+	.banner {
+		padding-top: 400px;
+	}
+	#saludo {
+		font-size: 90px;
+	}
+	#nombre {
+		font-size: 100px;
+	}
+
+	#nombre span {
+		font-size: 120px;
+	}
+	
+	.titulo-banner{
+		font-size: 80px
+	}
+	.leermas {
+		font-size: 30px;
+		width: 280px;
 	}
 }
 /* ------------------SECCION DEL ABOUT----------------- */
@@ -524,7 +547,6 @@ section .about-contenedor{
 /*---------PORTFOLIO-----*/
 .porta-contenedor{
 	margin: 0 auto;
-	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
