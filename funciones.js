@@ -84,6 +84,7 @@ observer.observe(studies);
 
 
 /*------------SLIDER------------ */
+/*
 (function() {
     const sliders = [...document.querySelectorAll('.slider_body')];
     const arrownext = document.querySelector('#after');
@@ -113,3 +114,4 @@ observer.observe(studies);
 })
 
 ();
+*/
