@@ -1,166 +1,175 @@
-<!DOCTYPe html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Antonio Giambra</title>
-        <meta charset="UTF-8">
-        <!----FONTELLO-->
-        <link rel="stylesheet" href="css/fontello.css">
-        <!-----ESTILOS CSS-->
-        <link rel="stylesheet" href="css/estilos.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--------FONT-FAMILY-->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!----MENU------>
-        <header>
-            <div class="contenedor">
-                <label class="icon-menu" id="icono"></label>
-                <div class="menu">
-                    <ul class="lista">
-                        <li>
-                            <a href="#about" id="seccion1">About</a>
-                        </li>
-                        <li>
-                            <a href="#experience" id="seccion2">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#Portfolio" id="seccion3">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#footer" id="seccion4">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+  <head>
+    <title>Antonio Giambra</title>
+    <meta charset="UTF-8" />
+    <!----FONTELLO-->
+    <link rel="stylesheet" href="css/fontello.css" />
+    <!-----ESTILOS CSS-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--------FONT-FAMILY-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!----MENU------>
+    <header>
+      <div class="contenedor">
+        <label class="icon-menu" id="icono"></label>
+        <div class="menu">
+          <ul class="lista">
+            <li>
+              <a href="#about" id="seccion1">About</a>
+            </li>
+            <li>
+              <a href="#experience" id="seccion2">Skills</a>
+            </li>
+            <li>
+              <a href="#Portfolio" id="seccion3">Portfolio</a>
+            </li>
+            <li>
+              <a href="#footer" id="seccion4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--BANNER-->
+    <main id="main">
+      <div class="main-contenedor">
+        <div class="banner">
+          <div class="nombre-banner">
+            <h2 id="saludo">Hello!</h2>
+            <h2 id="nombre">I'm <span>Antonio Giambra</span></h2>
+          </div>
+          <div class="titulo-banner">
+            <p>a Web Developer</p>
+            <a class="leermas" href="#about">Read more...</a>
+          </div>
+        </div>
+        <video muted autoplay loop class="img-main">
+          <source src="img/sunset.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="boton-abajo-main">
+        <a href="#about"><i class="icon-down-open" id="botonabajito"></i></a>
+      </div>
+    </main>
+
+    <!-------MI HISTORIA (ABOUT)------>
+    <section class="about" id="about">
+      <div class="boton-arriba">
+        <a href="#main"><i class="icon-up-open"></i></a>
+      </div>
+      <div class="about-contenedor">
+        <div class="imagenyo">
+          <img src="img/antonito.jpg" alt="Antonio Giambra" id="antonio" />
+        </div>
+        <div class="yo">
+          <h3>About me</h3>
+          <p>
+            My name is <b>Antonio Giambra</b>. I was born and raised in
+            Caracas-Venezuela and currently reside in Dublín-Ireland. I'm very
+            passionate about travelling and learning from different cultures
+            around the world. I am a self-taught web developer and highly
+            motivated for learning new technologies.
+          </p>
+          <a href="https://www.canva.com/design/DAFafTzSzMM/RlsQKhfy-hId-Q-AT1YZWA/view?utm_content=DAFafTzSzMM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="cv">Download CV</a>
+          <div class="links">
+            <a href="https://www.facebook.com/antonio.giambrasb/"
+              ><i class="icon-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/antonimason/"
+              ><i class="icon-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/antonio-giambra-castellanos-293148233/"
+              ><i class="icon-linkedin"></i
+            ></a>
+            <a href="https://github.com/Antonimason"
+              ><i class="icon-github-circled"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="boton-abajo">
+        <a href="#experience"><i class="icon-down-open"></i></a>
+      </div>
+    </section>
+
+    <!--------MIS ESTUDIOS--------->
+    <section class="works" id="experience">
+      <div class="boton-arriba">
+        <a href="#about"><i class="icon-up-open"></i></a>
+      </div>
+
+      <div class="works-contenedor">
+        <h3 class="skills">My Skills</h3>
+
+        <div class="estudios">
+          <div class="html box">
+            <div class="html name">HTML 5</div>
+            <div class="bar">
+              <div class="html-load cien"></div>
             </div>
-        </header>
-
-        <!--BANNER-->
-        <main id="main">
-            <div class="main-contenedor">
-                <div class="banner">
-                    <div class="nombre-banner">
-						<h3 id="saludo">Hello!</h3>
-                        <h2 id="nombre">I'm <span>Antonio Giambra</span></h2>
-                    </div>
-                    <div class="titulo-banner">
-                        <p>a Web Developer</p>
-                        <a class="leermas" href="#about">Read more...</a>
-                    </div>
-                </div>
-				<video muted autoplay loop class="img-main">
-					<source src="img/sunset.mp4" type="video/mp4">
-				</video>
+            <p id="htmlNumber"></p>
+          </div>
+          <div class="css box">
+            <div class="css name">CSS 3</div>
+            <div class="bar">
+              <div class="css-load cien"></div>
             </div>
-			<div class="boton-abajo-main">
-				<a href="#about"><i class="icon-down-open" id="botonabajito"></i></a>
-			</div>
-        </main>
-
-        <!-------MI HISTORIA (ABOUT)------>
-        <section class="about" id="about">
-			<div class="boton-arriba">
-				<a href="#main"><i class="icon-up-open"></i></a>
-			</div>
-            <div class="about-contenedor">
-				<div class="imagenyo">
-                	<img src="img/antonito.jpg" alt="Antonio Giambra" id="antonio">
-				</div>
-				<div class="yo">
-					<h3>About me</h3>
-					<p>My name is <b>Antonio Giambra</b>.  I was born and raised
-                        in Caracas-Venezuela and currently reside in Dublín-Ireland. 
-                        I'm very passionate about travelling and learning from different cultures around the world. 
-                        
-                        
-                        I am a self-taught web developer and highly motivated for learning new technologies.
-
-
-                    </p>
-                    <div class="links">
-                        <a href="https://www.facebook.com/antonio.giambrasb/"><i class="icon-facebook"></i></a>
-                        <a href="https://www.instagram.com/antonimason/"><i class="icon-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/antonio-giambra-castellanos-293148233/"><i class="icon-linkedin"></i></a>
-                        <a href="https://github.com/Antonimason"><i class="icon-github-circled"></i></a>
-                    </div>
-				</div>
+            <p id="cssNumber"></p>
+          </div>
+          <div class="javascript box">
+            <div class="js name">JAVASCRIPT</div>
+            <div class="bar">
+              <div class="js-load ochenta"></div>
             </div>
-			<div class="boton-abajo">
-				<a href="#experience"><i class="icon-down-open"></i></a>
-			</div>
-        </section>
-
-        <!--------MIS ESTUDIOS--------->
-        <section class="works" id="experience">
-			<div class="boton-arriba">
-				<a href="#about"><i class="icon-up-open"></i></a>
-			</div>
-
-			<div class="works-contenedor">
-                <h3 class="skills">My Skills</h3>
-              
-              <div class="estudios">  
-                <div class="html box">
-                    <div class="html name">HTML 5</div>
-                    <div class="bar">
-                        <div class="html-load cien"></div>
-                    </div>
-                    <p id="htmlNumber"></p>
-                </div>
-                <div class="css box">
-                    <div class="css name">CSS 3</div>
-                    <div class="bar">
-                        <div class="css-load cien"></div>
-                    </div>
-                    <p id="cssNumber"></p>
-                </div>
-                <div class="javascript box">
-                    <div class="js name">JAVASCRIPT</div>
-                    <div class="bar">
-                        <div class="js-load ochenta"></div>
-                    </div>
-                    <p id="jsNumber"></p>
-                </div>
-                <div class="bootstrap box">
-                    <div class="bootstrap name">BOOTSTRAP</div>
-                    <div class="bar">
-                        <div class="bootstrap-load cincuenta"></div>
-                    </div>
-                    <p id="bootsNumber"></p>
-                </div>
-                <div class="jquery box">
-                    <div class="jquery name">JQUERY</div>
-                    <div class="bar">
-                        <div class="jquery-load setenta"></div>
-                    </div>
-                    <p id="jqueryNumber"></p>
-                </div>
-                <div class="react box">
-                    <div class="react name">REACT JS</div>
-                    <div class="bar">
-                        <div class="react-load setenta"></div>
-                    </div>
-                    <p id="reactNumber"></p>
-                </div>
-                
-              </div>
-				
+            <p id="jsNumber"></p>
+          </div>
+          <div class="bootstrap box">
+            <div class="bootstrap name">BOOTSTRAP</div>
+            <div class="bar">
+              <div class="bootstrap-load cincuenta"></div>
             </div>
-			<div class="boton-abajo">
-				<a href="#Portfolio"><i class="icon-down-open"></i></a>
-			</div>
-        </section>
+            <p id="bootsNumber"></p>
+          </div>
+          <div class="jquery box">
+            <div class="jquery name">JQUERY</div>
+            <div class="bar">
+              <div class="jquery-load setenta"></div>
+            </div>
+            <p id="jqueryNumber"></p>
+          </div>
+          <div class="react box">
+            <div class="react name">REACT JS</div>
+            <div class="bar">
+              <div class="react-load setenta"></div>
+            </div>
+            <p id="reactNumber"></p>
+          </div>
+        </div>
+      </div>
+      <div class="boton-abajo">
+        <a href="#Portfolio"><i class="icon-down-open"></i></a>
+      </div>
+    </section>
 
-        <!-------PORTAFOLIO----->
-        <section class="portafolio" id="Portfolio">
-            <div class="boton-arriba">
-				<a href="#experience"><i class="icon-up-open"></i></a>
-			</div>
-            <div class="porta-contenedor">
-                <div class="explain">
-                    <h3>My works</h3>
-                </div>
-<!----------------------------------SLIDER SIN UTILIZAR
+    <!-------PORTAFOLIO----->
+    <section class="portafolio" id="Portfolio">
+      <div class="boton-arriba">
+        <a href="#experience"><i class="icon-up-open"></i></a>
+      </div>
+      <div class="porta-contenedor">
+        <div class="explain">
+          <h3>These are some of my projects</h3>
+        </div>
+        <!----------------------------------SLIDER SIN UTILIZAR
                 <section class="slider">
                     <div class="slider_container container">
                         <img src="asset/leftarrow.svg" class="slider_arrow" id="before">
@@ -249,71 +258,106 @@
                     </div>
                 </section>
     ------------------------>
-                <div id="container-work">
-                    <div class="project-container">
-                      <a href="https://calculatorantocode9.netlify.app" target="_blank">
-                        <img class="project" src="img/calcuadora.jpeg" alt="calculadora"/>
-                        <p>Calculator made with HTML, CSS and Javascript to solve basic mathematical equations.</p>
-                      </a>
-                    </div>
-                    <div class="project-container">
-                      <a href="https://watchantocode9.netlify.app" target="_blank">
-                        <img class="project" src="img/watch.jpg" alt="watch"/>
-                        <p>Clock, stopwatch and timer made with HTML, CSS, Javascript and the Date API . Useful to make the most of your time needs.</p>
-                      </a>
-                    </div>
-                    <div class="project-container">
-                      <a href="https://viajerosporelmundo.netlify.app" target="_blank">
-                        <img class="project" src="img/blog.jpg" alt="calculadora"/>
-                        <p>A blog page made with HTML and CSS. "Viajeros por el mundo" a couple that likes the exciting experience of traveling around the world.</p>
-                      </a>
-                    </div>
-                    <div class="project-container">
-                        <a href="https://weatherantocode9.netlify.app" target="_blank">
-                            <img class="project" src="img/wheater.jpg" alt="watch"/>
-                            <p>Weather page where you can see the weather for many cities around the world. Made with HTML, CSS and JavaScript using also the Openweathermap API.</p>
-                        </a>
-                    </div>
-                    <div class="project-container">
-                        <a href="https://todolis-antog9.netlify.app/" target="_blank">
-                            <img class="project" src="img/todolista.jpeg" alt="to do list"/>
-                            <p>If you are one of those people who forgets everything, why not use a to do list?. Made with Bootstrap 5, Javascript and the Localstorage API.</p>
-                        </a>
-                    </div>
-                    <div class="project-container">
-                        <a href="https://fananime-gallery.netlify.app/" target="_blank">
-                            <img class="project" src="img/galeria.jpeg" alt="galeria"/>
-                            <p>Are you an anime fan?. You can find some cool pictures in it. Made with Bootstrap 5 and JQuery.</p>
-                        </a>
-                    </div>
-                  </div>
-            </div>
-        </section>
-		
-        <!-----FOOTER----->
-		<footer id="footer">
-			<div class="footer-contenedor">
-				<div class="sociales">
-                    <p>|</p>
-                    <a href="mailto:antonio.jose.giambra@gmail.com" id="mail">Contact</a>
-                    <p>|</p>
-					<a href="https://www.facebook.com/antonio.giambrasb/"><i class="icon-facebook"></i></a>
-                    <p>|</p>
-					<a href="https://www.instagram.com/antonimason/"><i class="icon-instagram"></i></a>
-                    <p>|</p>
-                    <a href="https://www.linkedin.com/in/antonio-giambra-castellanos-293148233/"><i class="icon-linkedin"></i></a>
-                    <p>|</p>
-                    <a href="https://github.com/Antonimason"><i class="icon-github-circled"></i></a>
-                    <p>|</p>
-                    <p>&copy;Antonio Giambra</p>
-                    <p>|</p>
-                </div>
-			</div>
-		</footer>
-		
-        <!--REVEAL SCROLL-->
-       <script src="https://unpkg.com/scrollreveal"></script>
-        <!--JS-->
-       <script src="funciones.js"></script>
-    </body>
+        <div id="container-work">
+          <div class="project-container">
+            <a href="https://calculatorantocode9.netlify.app" target="_blank">
+              <img
+                class="project"
+                src="img/calcuadora.jpeg"
+                alt="calculadora"
+              />
+              <p>
+                Calculator made with HTML, CSS and Javascript to solve basic
+                mathematical equations.
+              </p>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://watchantocode9.netlify.app" target="_blank">
+              <img class="project" src="img/watch.jpg" alt="watch" />
+              <p>
+                Clock, stopwatch and timer made with HTML, CSS, Javascript and
+                the Date API . Useful to make the most of your time needs.
+              </p>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://viajerosporelmundo.netlify.app" target="_blank">
+              <img class="project" src="img/blog.jpg" alt="calculadora" />
+              <p>
+                A blog page made with HTML and CSS. "Viajeros por el mundo" a
+                couple that likes the exciting experience of traveling around
+                the world.
+              </p>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://weatherantocode9.netlify.app" target="_blank">
+              <img class="project" src="img/wheater.jpg" alt="watch" />
+              <p>
+                Weather page where you can see the weather for many cities
+                around the world. Made with HTML, CSS and JavaScript using also
+                the Openweathermap API.
+              </p>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://todolis-antog9.netlify.app/" target="_blank">
+              <img class="project" src="img/todolista.jpeg" alt="to do list" />
+              <p>
+                If you are one of those people who forgets everything, why not
+                use a to do list?. Made with Bootstrap 5, Javascript and the
+                Localstorage API.
+              </p>
+            </a>
+          </div>
+          <div class="project-container">
+            <a href="https://fananime-gallery.netlify.app/" target="_blank">
+              <img class="project" src="img/galeria.jpeg" alt="galeria" />
+              <p>
+                Are you an anime fan?. You can find some cool pictures in it.
+                Made with Bootstrap 5 and JQuery.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----FOOTER----->
+    <footer id="footer">
+      <div class="footer-contenedor">
+        <p class="together">Let's work together...</p>
+        <div class="sociales">
+          <p>|</p>
+          <a href="mailto:antonio.jose.giambra@gmail.com" id="mail">@ Send a mail</a>
+          <p>|</p>
+          <a href="https://www.facebook.com/antonio.giambrasb/"
+            ><i class="icon-facebook"></i
+          ></a>
+          <p>|</p>
+          <a href="https://www.instagram.com/antonimason/"
+            ><i class="icon-instagram"></i
+          ></a>
+          <p>|</p>
+          <a
+            href="https://www.linkedin.com/in/antonio-giambra-castellanos-293148233/"
+            ><i class="icon-linkedin"></i
+          ></a>
+          <p>|</p>
+          <a href="https://github.com/Antonimason"
+            ><i class="icon-github-circled"></i
+          ></a>
+          <p>|</p>
+          <p>&copy;Antonio Giambra</p>
+          <p>|</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--REVEAL SCROLL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--JS-->
+    <script src="funciones.js"></script>
+  </body>
 </html>
