@@ -7,15 +7,17 @@
 
 <h2>Features</h2>
 
-- Watch Function
-- Timer Function
-- Stopwatch Function
+- Home
+- About Me
+- Skills
+- Projects
+- Contact
 
 <h2>Technologies Used</h2>
 <p align="left"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></p>
 
 <h2>Web page link</h2>
-<a href="https://watchantocode9.netlify.app/">Clock-Timer-Stopwatch</a>
+<a href="https://antonimason.netlify.app/">Porftolio 1.0</a>
 
 <h2>Contact</h2>
 
